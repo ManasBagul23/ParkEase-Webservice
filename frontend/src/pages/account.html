@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account | ParkEase</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 min-h-screen font-sans flex flex-col">
+
+<!-- Header -->
+<header class="bg-white bg-opacity-10 backdrop-blur-lg text-white flex items-center justify-between px-8 py-4 shadow-md">
+  <div class="text-white font-semibold text-lg">Hey <span class="text-yellow-300">ParkEase</span></div>
+  <nav class="flex gap-6 text-white font-semibold">
+    <a href="dashboard.html" class="hover:text-yellow-300 transition">Home</a>
+    <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
+    <a href="activity.html" class="hover:text-yellow-300 transition">Activity</a>
+    <a href="#" class="text-yellow-300 font-bold transition">Account</a>
+  </nav>
+</header>
+
+<div class="px-4 mt-8 max-w-3xl mx-auto">
+
+  <!-- Profile Card -->
+  <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 text-white shadow-md flex flex-col md:flex-row items-center gap-6">
+    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-yellow-300">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="w-full h-full object-cover">
+    </div>
+    <div class="flex-1 flex flex-col gap-2">
+      <h2 class="text-2xl font-semibold">John Doe</h2>
+      <p class="text-gray-200">johndoe@example.com</p>
+      <p class="text-gray-200">Member since: Jan 2023</p>
+    </div>
+  </div>
+
+  <!-- Account Actions -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-3 text-center">
+      <i class="fas fa-key text-3xl text-yellow-300"></i>
+      <h3 class="text-lg font-semibold">Change Password</h3>
+      <p class="text-gray-200">Update your account password securely.</p>
+      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Update</button>
+    </div>
+
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-3 text-center">
+      <i class="fas fa-car text-3xl text-yellow-300"></i>
+      <h3 class="text-lg font-semibold">Manage Vehicles</h3>
+      <p class="text-gray-200">Add or remove your cars and bikes.</p>
+      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Manage</button>
+    </div>
+
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-3 text-center">
+      <i class="fas fa-credit-card text-3xl text-yellow-300"></i>
+      <h3 class="text-lg font-semibold">Payment Methods</h3>
+      <p class="text-gray-200">Add or update your payment options.</p>
+      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Update</button>
+    </div>
+
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-3 text-center">
+      <i class="fas fa-sign-out-alt text-3xl text-yellow-300"></i>
+      <h3 class="text-lg font-semibold">Logout</h3>
+      <p class="text-gray-200">Sign out from your ParkEase account.</p>
+      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Logout</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-black bg-opacity-70 text-gray-300 text-center py-4 mt-auto">
+  <p class="text-sm md:text-base">© 2025 <span class="font-semibold text-yellow-300">ParkEase</span>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
