@@ -1,81 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activity | ParkEase</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | ParkEase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 min-h-screen font-sans flex flex-col">
 
-<!-- Header -->
-<header class="bg-white bg-opacity-10 backdrop-blur-lg text-white flex items-center justify-between px-8 py-4 shadow-md">
-  <div class="text-white font-semibold text-lg">Hey <span class="text-yellow-300">ParkEase</span></div>
-  <nav class="flex gap-6 text-white font-semibold">
-    <a href="dashboard.html" class="hover:text-yellow-300 transition">Home</a>
-    <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
-    <a href="#" class="text-yellow-300 font-bold transition">Activity</a>
-    <a href="#" class="hover:text-yellow-300 transition">Account</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header class="bg-white bg-opacity-10 backdrop-blur-lg text-white flex items-center justify-between px-8 py-4 shadow-md">
+    <div class="text-white font-semibold text-lg">Hey <span class="text-yellow-300">ParkEase</span></div>
+    <nav class="flex gap-6 text-white font-semibold">
+      <a href="dashboard.html" class="hover:text-yellow-300 transition">Home</a>
+      <a href="service.html" class="text-yellow-300 font-bold transition">Service</a>
+      <a href="activity.html" class="hover:text-yellow-300 transition">Activity</a>
+      <a href="account.html" class="hover:text-yellow-300 transition">Account</a>
+    </nav>
+  </header>
 
-<div class="px-4 mt-8">
+  <div class="px-4 mt-10 max-w-4xl mx-auto w-full">
 
-  <!-- Upcoming Section -->
-  <h2 class="text-white text-2xl font-semibold mb-4">Upcoming</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col gap-2">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-car-side text-3xl text-yellow-300"></i>
-        <h3 class="text-lg font-semibold">Car Spot Reserved</h3>
+    <h2 class="text-3xl font-semibold text-white text-center mb-8">Our Services</h2>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service Card 1 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-parking text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Parking Slots</h3>
+        <p class="text-gray-200">Reserve your parking space in advance for hassle-free parking.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Book Now</button>
       </div>
-      <p class="text-gray-200">Reserved for Downtown parking.</p>
-      <span class="text-sm text-gray-400">Tomorrow, 9:00 AM</span>
-      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">View</button>
+
+      <!-- Service Card 2 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-car-side text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Car Services</h3>
+        <p class="text-gray-200">Get your car checked, cleaned, and maintained with ease.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Book Service</button>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-motorcycle text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Bike Services</h3>
+        <p class="text-gray-200">Maintain and repair your bikes with trusted service partners.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Book Service</button>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-shield-alt text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Premium Security</h3>
+        <p class="text-gray-200">Secure your vehicles with premium surveillance and monitoring.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Activate</button>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-wallet text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Wallet & Payments</h3>
+        <p class="text-gray-200">Add funds, pay for parking, and manage payment methods easily.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Manage</button>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-bolt text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Electric Charging</h3>
+        <p class="text-gray-200">Locate and book electric vehicle charging stations conveniently.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Book Slot</button>
+      </div>
+
+      <!-- Service Card 7: Car Towing -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col items-center gap-4 text-center">
+        <i class="fas fa-truck-moving text-4xl text-yellow-300"></i>
+        <h3 class="text-xl font-semibold">Car Towing</h3>
+        <p class="text-gray-200">Get your car towed safely to the nearest service center or garage.</p>
+        <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Request Tow</button>
+      </div>
+
     </div>
 
-    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col gap-2">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-motorcycle text-3xl text-yellow-300"></i>
-        <h3 class="text-lg font-semibold">Bike Spot Reserved</h3>
-      </div>
-      <p class="text-gray-200">Reserved at Riverside parking.</p>
-      <span class="text-sm text-gray-400">Tomorrow, 11:00 AM</span>
-      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">View</button>
-    </div>
   </div>
 
-  <!-- Past Section -->
-  <h2 class="text-white text-2xl font-semibold mt-12 mb-4">Past Bookings</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col gap-2">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-calendar-check text-3xl text-yellow-300"></i>
-        <h3 class="text-lg font-semibold">Car Spot Booking</h3>
-      </div>
-      <p class="text-gray-200">Booked at City Center.</p>
-      <span class="text-sm text-gray-400">Yesterday, 10:30 AM</span>
-      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Details</button>
-    </div>
-
-    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 text-white shadow-md hover:scale-105 transform transition flex flex-col gap-2">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-motorcycle text-3xl text-yellow-300"></i>
-        <h3 class="text-lg font-semibold">Bike Spot Booking</h3>
-      </div>
-      <p class="text-gray-200">Booked at Riverside.</p>
-      <span class="text-sm text-gray-400">2 days ago, 3:45 PM</span>
-      <button class="mt-2 bg-yellow-300 text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Details</button>
-    </div>
-  </div>
-
-</div>
-
-<!-- Footer -->
-<footer class="bg-black bg-opacity-70 text-gray-300 text-center py-4 mt-auto">
-  <p class="text-sm md:text-base">© 2025 <span class="font-semibold text-yellow-300">ParkEase</span>. All rights reserved.</p>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-70 text-gray-300 text-center py-4 mt-auto">
+    <p class="text-sm md:text-base">© 2025 <span class="font-semibold text-yellow-300">ParkEase</span>. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

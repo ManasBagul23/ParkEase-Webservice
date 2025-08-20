@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details | ParkEase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 min-h-screen font-sans flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white bg-opacity-10 backdrop-blur-lg text-white flex items-center justify-between px-8 py-4 shadow-md">
+    <div class="text-white font-semibold text-lg">Hey <span class="text-yellow-300">ParkEase</span></div>
+    <nav class="flex gap-6 text-white font-semibold">
+      <a href="dashboard.html" class="hover:text-yellow-300 transition">Home</a>
+      <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
+      <a href="activity.html" class="hover:text-yellow-300 transition">Activity</a>
+      <a href="account.html" class="hover:text-yellow-300 transition">Account</a>
+    </nav>
+  </header>
+
+  <div class="px-4 mt-10 max-w-3xl mx-auto w-full">
+
+    <!-- Service Details Card -->
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 text-white shadow-md">
+      <h2 class="text-3xl font-semibold text-yellow-300 mb-4">QuickFix Auto</h2>
+      
+      <div class="flex flex-col gap-2 mb-4">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-phone text-yellow-300"></i>
+          <span class="text-gray-200">+91 9876543210</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-map-marker-alt text-yellow-300"></i>
+          <span class="text-gray-200">123 Main Street, Bangalore, KA</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-clock text-yellow-300"></i>
+          <span class="text-gray-200">Open: 9:00 AM - 7:00 PM</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-2">Services Offered</h3>
+      <ul class="list-disc list-inside text-gray-200 mb-6">
+        <li>Full Vehicle Service</li>
+        <li>Oil Change & Filter Replacement</li>
+        <li>Brake & Suspension Repair</li>
+        <li>Battery Replacement</li>
+        <li>AC & Electrical Maintenance</li>
+      </ul>
+
+      <button class="mt-2 w-full bg-yellow-300 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">Book Service</button>
+    </div>
+
+  </div>
+
+  <footer class="bg-black bg-opacity-70 text-gray-300 text-center py-4 mt-auto">
+    <p class="text-sm md:text-base">© 2025 <span class="font-semibold text-yellow-300">ParkEase</span>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

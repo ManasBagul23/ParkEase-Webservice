@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Methods | ParkEase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 min-h-screen font-sans flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white bg-opacity-10 backdrop-blur-lg text-white flex items-center justify-between px-8 py-4 shadow-md">
+    <div class="text-white font-semibold text-lg">Hey <span class="text-yellow-300">ParkEase</span></div>
+    <nav class="flex gap-6 text-white font-semibold">
+      <a href="dashboard.html" class="hover:text-yellow-300 transition">Home</a>
+      <a href="service.html" class="hover:text-yellow-300 transition">Service</a>
+      <a href="activity.html" class="hover:text-yellow-300 transition">Activity</a>
+      <a href="account.html" class="hover:text-yellow-300 transition">Account</a>
+    </nav>
+  </header>
+
+  <div class="px-4 mt-10 max-w-3xl mx-auto w-full">
+
+    <!-- Payment Methods Card -->
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 text-white shadow-md">
+      <h2 class="text-2xl font-semibold text-center mb-6">Payment Methods</h2>
+      
+      <!-- Add Payment Method Form -->
+      <form action="#" method="POST" class="flex flex-col gap-4 mb-8">
+        <input type="text" name="card_name" placeholder="Cardholder Name" class="px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        <input type="text" name="card_number" placeholder="Card Number" class="px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        <div class="flex gap-4">
+          <input type="text" name="expiry_date" placeholder="MM/YY" class="flex-1 px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+          <input type="text" name="cvv" placeholder="CVV" class="flex-1 px-4 py-2 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+        </div>
+        <button type="submit" class="self-start mt-2 px-6 py-2 bg-yellow-300 text-blue-600 rounded-full font-semibold hover:bg-yellow-400 transition">Add Card</button>
+      </form>
+
+      <!-- Cards List -->
+      <h3 class="text-xl font-semibold mb-4">Your Cards</h3>
+      <div class="flex flex-col gap-4">
+
+        <!-- Example Card -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 flex justify-between items-center shadow-md hover:scale-105 transform transition">
+          <div class="flex flex-col">
+            <span class="font-semibold text-yellow-300">John Doe</span>
+            <span class="text-gray-200">**** **** **** 1234</span>
+            <span class="text-gray-200">Exp: 12/26</span>
+          </div>
+          <button class="px-4 py-2 bg-red-500 rounded-full font-semibold hover:bg-red-600 transition">Remove</button>
+        </div>
+
+        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 flex justify-between items-center shadow-md hover:scale-105 transform transition">
+          <div class="flex flex-col">
+            <span class="font-semibold text-yellow-300">Jane Smith</span>
+            <span class="text-gray-200">**** **** **** 5678</span>
+            <span class="text-gray-200">Exp: 08/25</span>
+          </div>
+          <button class="px-4 py-2 bg-red-500 rounded-full font-semibold hover:bg-red-600 transition">Remove</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-70 text-gray-300 text-center py-4 mt-auto">
+    <p class="text-sm md:text-base">© 2025 <span class="font-semibold text-yellow-300">ParkEase</span>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
